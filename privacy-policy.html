@@ -11,7 +11,7 @@
 <h1 id="privacy-policy-for-catchfrase">Privacy Policy for
 CatchFrase</h1>
 <p><strong>Effective Date:</strong> June 27, 2026 <strong>Last
-Updated:</strong> July 7, 2026</p>
+Updated:</strong> August 1, 2026</p>
 <p>Alex Yao ("we," "our," or "us") built CatchFrase as a free-to-start
 app with an optional subscription (CatchFrase Plus). This Privacy
 Policy explains how we collect, use, and protect your information when
@@ -45,6 +45,13 @@ Plus, your payment is processed by Apple. We receive subscription-status
 information (such as whether a subscription is active) through our
 subscription-management provider, RevenueCat, tied to a random app
 identifier — not to your name or Apple ID.</li>
+<li><strong>Crash reports.</strong> If the app crashes, a report is sent
+to our crash-reporting provider, Sentry, so we can find and fix the
+fault. It contains the error, where in the code it happened, your device
+model, operating system version and app version, and an identifier
+Sentry generates for the installation. It contains no name, no email, no
+photos, no audio and none of the words you have collected. We use these
+reports only to fix faults.</li>
 </ul>
 <h3 id="information-we-do-not-collect">Information We Do NOT
 Collect</h3>
@@ -132,6 +139,31 @@ tied to a random app identifier)</td>
 <td><a
 href="https://www.revenuecat.com/privacy/">https://www.revenuecat.com/privacy/</a></td>
 </tr>
+<tr>
+<td>fal (SAM segmentation)</td>
+<td>Only when an on-device cutout fails and you tap to fix it: the
+photo is sent once so the object can be separated from its background.
+It is processed for that request and not kept</td>
+<td><a href="https://fal.ai/privacy">https://fal.ai/privacy</a></td>
+</tr>
+<tr>
+<td>Apple (Speech Recognition)</td>
+<td>Recognizes your voice during pronunciation practice. This happens
+on your device when your device supports it, and otherwise by Apple's
+speech recognition service. Audio is never stored and never reaches
+CatchFrase's servers</td>
+<td><a
+href="https://www.apple.com/legal/privacy/">https://www.apple.com/legal/privacy/</a></td>
+</tr>
+<tr>
+<td>Sentry</td>
+<td>Receives a report when the app crashes: the error, where in the
+code it happened, your device model, operating system version and app
+version, plus an identifier Sentry generates for the installation. It
+carries no photos, no audio and no vocabulary you have collected</td>
+<td><a
+href="https://sentry.io/privacy/">https://sentry.io/privacy/</a></td>
+</tr>
 </tbody>
 </table>
 <p>The photo is transmitted over an encrypted (HTTPS) connection solely
@@ -170,9 +202,9 @@ app and never sees anything you do in the app.</li>
 Retained on your device until you delete the app or clear its data.
 Deleting the app removes this data.</li>
 <li><strong>Photos sent for identification:</strong> Transmitted only to
-generate a card and not stored on our servers. Any handling by Google or
-Cloudflare is governed by their respective privacy policies (Section
-4).</li>
+generate a card, or to redo a cutout you asked to fix, and not stored on
+our servers. Any handling by Google, Cloudflare or fal is governed by
+their respective privacy policies (Section 4).</li>
 <li><strong>Anonymous usage events (app and website):</strong> Stored in
 aggregate form on our analytics infrastructure for a limited period and
 then expire automatically. They are never joined with any identity,
@@ -180,6 +212,9 @@ because none is collected.</li>
 <li><strong>Website session data (Microsoft Clarity):</strong> Retained
 by Microsoft according to the Microsoft Privacy Statement (Section
 5).</li>
+<li><strong>Crash reports:</strong> Retained by Sentry for a limited
+period and then deleted automatically. They hold no identity to join
+them to (Section 4).</li>
 <li><strong>Support requests:</strong> Retained for as long as needed to
 resolve your request.</li>
 </ul>
