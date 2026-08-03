@@ -11,7 +11,7 @@
 <h1 id="privacy-policy-for-catchfrase">Privacy Policy for
 CatchFrase</h1>
 <p><strong>Effective Date:</strong> June 27, 2026 <strong>Last
-Updated:</strong> August 2, 2026</p>
+Updated:</strong> August 3, 2026</p>
 <p>Alex Yao ("we," "our," or "us") built CatchFrase as a free-to-start
 app with an optional subscription (CatchFrase Plus). This Privacy Policy
 explains how we collect, use, and protect your information when you use
@@ -72,7 +72,9 @@ Layers advertising storage, advertising user data, and ad
 personalization off.</li>
 <li><strong>Anonymous product analytics.</strong> In CatchFrase 1.2.2
 and later, PostHog receives a random identifier, app and device details,
-and the named product events described above. CatchFrase does not send
+the named product events described above, and coarse country and region
+derived from the connection. PostHog discards the source IP address after
+deriving that coarse location. CatchFrase does not send
 PostHog names, email addresses, photos, audio, collected words, or the
 advertising identifier. PostHog person profiles, screen capture, session
 replay, surveys, push handling, and crash reporting are off.</li>
@@ -96,7 +98,9 @@ build advertising profiles.</li>
 <li>We do <strong>not</strong> send data to Tenjin for advertising
 measurement unless you first allow tracking through Apple's system
 prompt.</li>
-<li>We do <strong>not</strong> collect your location.</li>
+<li>We do <strong>not</strong> collect your precise location or GPS
+coordinates. PostHog derives coarse country and region for analytics and
+discards the source IP address.</li>
 <li>Your collected words, cards, and captures are stored <strong>only on
 your device</strong> and are not synced to our servers or any cloud
 account.</li>
@@ -219,9 +223,10 @@ href="https://layers.com/privacy/">https://layers.com/privacy/</a></td>
 </tr>
 <tr>
 <td>PostHog</td>
-<td>Receives named product-use events under a random identifier. Person
-profiles, screen capture, session replay, surveys, push handling, and
-crash reporting are off</td>
+<td>Receives named product-use events under a random identifier and derives
+coarse country and region from the connection. It discards the source IP
+address. Person profiles, screen capture, session replay, surveys, push
+handling, and crash reporting are off</td>
 <td><a
 href="https://posthog.com/privacy">https://posthog.com/privacy</a></td>
 </tr>
